@@ -76,14 +76,14 @@ body {
 /* ===== HERO ===== */
 .hero {
   min-height: 60vh;
-  display: flex; align-items: flex-start;
+  display: flex; align-items: center;
   position: relative; overflow: hidden;
-  padding: 20px 24px 48px;
+  padding: 48px 24px;
 }
 .hero__bg {
   position: absolute; inset: 0;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   z-index: 0;
 }
 .hero__overlay {
