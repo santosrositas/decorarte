@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DecorArte — Piezas Decorativas Únicas</title>
+  <meta name="description" content="Figuras y piezas decorativas artesanales. Lleva arte a cada rincón de tu hogar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="top">
+  <div class="header__inner">
+    <a href="#top" class="header__logo">
+      <svg width="44" height="44" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="10" width="180" height="180" rx="4" stroke="#1B2B4B" stroke-width="18" fill="none"/>
+        <path d="M60 160 L100 50 L140 160" stroke="#1B2B4B" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M75 125 Q100 110 125 125" stroke="#1B2B4B" stroke-width="10" stroke-linecap="round" fill="none"/>
+        <path d="M55 145 Q80 90 100 120 Q120 150 145 80 Q160 40 130 60 Q110 75 130 100" stroke="#1B2B4B" stroke-width="10" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span class="header__brand">Decor<strong>Arte</strong></span>
+    </a>
+
+    <button class="header__toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#productos" class="nav__link">Productos</a>
+      <a href="#contacto" class="nav__link">Contacto</a>
+      <a href="https://wa.me/528129418986" target="_blank" class="nav__cta">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero__content">
+    <span class="hero__tag">Colección 2025</span>
+    <h1 class="hero__title">Arte que<br/><em>transforma</em> espacios</h1>
+    <p class="hero__sub">Piezas decorativas únicas con carácter. Cada figura, una historia.</p>
+    <a href="#productos" class="btn btn--primary">Ver colección</a>
+  </div>
+  <div class="hero__ornament">
+    <div class="hero__ring hero__ring--1"></div>
+    <div class="hero__ring hero__ring--2"></div>
+    <div class="hero__ring hero__ring--3"></div>
+  </div>
+</section>
+
+<!-- ===== STRIP ===== -->
+<div class="strip">
+  <span>Envíos a todo México</span>
+  <span class="strip__dot">·</span>
+  <span>Piezas exclusivas</span>
+  <span class="strip__dot">·</span>
+  <span>Atención personalizada por WhatsApp</span>
+  <span class="strip__dot">·</span>
+  <span>Garantía de calidad</span>
+</div>
+
+<!-- ===== PRODUCTOS ===== -->
+<section class="products" id="productos">
+  <div class="section-header">
+    <span class="section-tag">Catálogo</span>
+    <h2 class="section-title">Nuestra Colección</h2>
+    <p class="section-sub">Cada pieza está seleccionada para transformar cualquier espacio en una obra de arte.</p>
+  </div>
+
+  <div class="products__grid">
+
+    <article class="card">
+      <div class="card__img-wrap">
+        <img src="assets/productos/Caballo_dorado.png" alt="Equus Dorado" loading="lazy" />
+        <span class="card__badge">Destacado</span>
+      </div>
+      <div class="card__body">
+        <h3 class="card__name">Equus Dorado</h3>
+        <p class="card__desc">Figura ecuestre bañada en acabado dorado. Símbolo de elegancia y poder para salas y escritorios ejecutivos.</p>
+        <a href="https://wa.me/528129418986?text=Hola%2C%20me%20interesa%20Equus%20Dorado" target="_blank" class="btn btn--wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.851L.057 23.885a.5.5 0 00.608.628l6.169-1.453A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.807 9.807 0 01-5.034-1.388l-.36-.214-3.733.879.936-3.62-.235-.372A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Me interesa
+        </a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__img-wrap">
+        <img src="assets/productos/Toro_cafe.png" alt="Toro Ibérico" loading="lazy" />
+      </div>
+      <div class="card__body">
+        <h3 class="card__name">Toro Ibérico</h3>
+        <p class="card__desc">Figura de toro en tono terracota y café. Robustez y carácter para espacios modernos o rústicos.</p>
+        <a href="https://wa.me/528129418986?text=Hola%2C%20me%20interesa%20Toro%20Ib%C3%A9rico" target="_blank" class="btn btn--wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.851L.057 23.885a.5.5 0 00.608.628l6.169-1.453A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.807 9.807 0 01-5.034-1.388l-.36-.214-3.733.879.936-3.62-.235-.372A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Me interesa
+        </a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__img-wrap">
+        <img src="assets/productos/Oso_oscuro.png" alt="Oso Nordic" loading="lazy" />
+      </div>
+      <div class="card__body">
+        <h3 class="card__name">Oso Nordic</h3>
+        <p class="card__desc">Figura de oso en acabado oscuro mate. Presencia imponente con un toque contemporáneo y elegante.</p>
+        <a href="https://wa.me/528129418986?text=Hola%2C%20me%20interesa%20Oso%20Nordic" target="_blank" class="btn btn--wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.851L.057 23.885a.5.5 0 00.608.628l6.169-1.453A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.807 9.807 0 01-5.034-1.388l-.36-.214-3.733.879.936-3.62-.235-.372A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Me interesa
+        </a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__img-wrap">
+        <img src="assets/productos/Balon.png" alt="Esfera Etérea" loading="lazy" />
+      </div>
+      <div class="card__body">
+        <h3 class="card__name">Esfera Etérea</h3>
+        <p class="card__desc">Esfera decorativa con acabado premium. Perfecta como centro de mesa o elemento escultural en repisas.</p>
+        <a href="https://wa.me/528129418986?text=Hola%2C%20me%20interesa%20Esfera%20Et%C3%A9rea" target="_blank" class="btn btn--wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.851L.057 23.885a.5.5 0 00.608.628l6.169-1.453A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.807 9.807 0 01-5.034-1.388l-.36-.214-3.733.879.936-3.62-.235-.372A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Me interesa
+        </a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__img-wrap">
+        <img src="assets/productos/Cuadro.png" alt="Cuadro Artesanal" loading="lazy" />
+        <span class="card__badge card__badge--gold">Arte</span>
+      </div>
+      <div class="card__body">
+        <h3 class="card__name">Cuadro Artesanal</h3>
+        <p class="card__desc">Obra decorativa de pared con técnica mixta. Colores neutros que complementan cualquier estilo de interior.</p>
+        <a href="https://wa.me/528129418986?text=Hola%2C%20me%20interesa%20Cuadro%20Artesanal" target="_blank" class="btn btn--wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.851L.057 23.885a.5.5 0 00.608.628l6.169-1.453A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.807 9.807 0 01-5.034-1.388l-.36-.214-3.733.879.936-3.62-.235-.372A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Me interesa
+        </a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__img-wrap">
+        <img src="assets/productos/Figura_1.png" alt="Figura Lumínica I" loading="lazy" />
+      </div>
+      <div class="card__body">
+        <h3 class="card__name">Figura Lumínica I</h3>
+        <p class="card__desc">Pieza escultural de líneas modernas. Diseño atemporal que aporta sofisticación a salas y comedores.</p>
+        <a href="https://wa.me/528129418986?text=Hola%2C%20me%20interesa%20Figura%20Lum%C3%ADnica%20I" target="_blank" class="btn btn--wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.851L.057 23.885a.5.5 0 00.608.628l6.169-1.453A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.807 9.807 0 01-5.034-1.388l-.36-.214-3.733.879.936-3.62-.235-.372A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Me interesa
+        </a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__img-wrap">
+        <img src="assets/productos/Figura_2.png" alt="Figura Lumínica II" loading="lazy" />
+      </div>
+      <div class="card__body">
+        <h3 class="card__name">Figura Lumínica II</h3>
+        <p class="card__desc">Escultura decorativa con acabado artesanal. Perfecta para regalar o como elemento focal de cualquier cuarto.</p>
+        <a href="https://wa.me/528129418986?text=Hola%2C%20me%20interesa%20Figura%20Lum%C3%ADnica%20II" target="_blank" class="btn btn--wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.851L.057 23.885a.5.5 0 00.608.628l6.169-1.453A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.807 9.807 0 01-5.034-1.388l-.36-.214-3.733.879.936-3.62-.235-.372A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Me interesa
+        </a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__img-wrap">
+        <img src="assets/productos/Figura_3.png" alt="Figura Lumínica III" loading="lazy" />
+      </div>
+      <div class="card__body">
+        <h3 class="card__name">Figura Lumínica III</h3>
+        <p class="card__desc">Pieza artesanal con textura única. Su silueta singular la convierte en el punto de atención de cualquier espacio.</p>
+        <a href="https://wa.me/528129418986?text=Hola%2C%20me%20interesa%20Figura%20Lum%C3%ADnica%20III" target="_blank" class="btn btn--wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.851L.057 23.885a.5.5 0 00.608.628l6.169-1.453A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.807 9.807 0 01-5.034-1.388l-.36-.214-3.733.879.936-3.62-.235-.372A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Me interesa
+        </a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__img-wrap">
+        <img src="assets/productos/Figura_4.png" alt="Figura Lumínica IV" loading="lazy" />
+      </div>
+      <div class="card__body">
+        <h3 class="card__name">Figura Lumínica IV</h3>
+        <p class="card__desc">Detalle escultural con carácter propio. Ideal para repisas, mesas auxiliares y decoración de oficinas de lujo.</p>
+        <a href="https://wa.me/528129418986?text=Hola%2C%20me%20interesa%20Figura%20Lum%C3%ADnica%20IV" target="_blank" class="btn btn--wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.851L.057 23.885a.5.5 0 00.608.628l6.169-1.453A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.807 9.807 0 01-5.034-1.388l-.36-.214-3.733.879.936-3.62-.235-.372A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Me interesa
+        </a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__img-wrap">
+        <img src="assets/productos/Figura_5.png" alt="Figura Lumínica V" loading="lazy" />
+      </div>
+      <div class="card__body">
+        <h3 class="card__name">Figura Lumínica V</h3>
+        <p class="card__desc">Escultura de carácter contemporáneo. Un accesorio decorativo que eleva la estética de cualquier entorno.</p>
+        <a href="https://wa.me/528129418986?text=Hola%2C%20me%20interesa%20Figura%20Lum%C3%ADnica%20V" target="_blank" class="btn btn--wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.851L.057 23.885a.5.5 0 00.608.628l6.169-1.453A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.807 9.807 0 01-5.034-1.388l-.36-.214-3.733.879.936-3.62-.235-.372A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Me interesa
+        </a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__img-wrap">
+        <img src="assets/productos/Figura_6.png" alt="Figura Lumínica VI" loading="lazy" />
+      </div>
+      <div class="card__body">
+        <h3 class="card__name">Figura Lumínica VI</h3>
+        <p class="card__desc">Pieza de arte decorativo con volumen y profundidad. Aporta personalidad y distinción a salas y estudios.</p>
+        <a href="https://wa.me/528129418986?text=Hola%2C%20me%20interesa%20Figura%20Lum%C3%ADnica%20VI" target="_blank" class="btn btn--wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.851L.057 23.885a.5.5 0 00.608.628l6.169-1.453A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.807 9.807 0 01-5.034-1.388l-.36-.214-3.733.879.936-3.62-.235-.372A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Me interesa
+        </a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__img-wrap">
+        <img src="assets/productos/Figura_7.png" alt="Figura Lumínica VII" loading="lazy" />
+      </div>
+      <div class="card__body">
+        <h3 class="card__name">Figura Lumínica VII</h3>
+        <p class="card__desc">La joya de la colección. Una pieza escultural de acabado exclusivo que define espacios con elegancia única.</p>
+        <a href="https://wa.me/528129418986?text=Hola%2C%20me%20interesa%20Figura%20Lum%C3%ADnica%20VII" target="_blank" class="btn btn--wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.851L.057 23.885a.5.5 0 00.608.628l6.169-1.453A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.807 9.807 0 01-5.034-1.388l-.36-.214-3.733.879.936-3.62-.235-.372A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Me interesa
+        </a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== BANNER CTA ===== -->
+<section class="cta-banner">
+  <div class="cta-banner__inner">
+    <h2>¿Buscas algo especial?</h2>
+    <p>Cuéntanos lo que tienes en mente. Te ayudamos a encontrar la pieza perfecta para tu espacio.</p>
+    <a href="https://wa.me/528129418986?text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20de%20DecorArte" target="_blank" class="btn btn--light">Escríbenos por WhatsApp</a>
+  </div>
+</section>
+
+<!-- ===== CONTACTO ===== -->
+<section class="contact" id="contacto">
+  <div class="section-header">
+    <span class="section-tag">Contacto</span>
+    <h2 class="section-title">Estamos para ti</h2>
+  </div>
+  <div class="contact__grid">
+    <div class="contact__item">
+      <div class="contact__icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.22 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.56a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
+      </div>
+      <div>
+        <h4>WhatsApp</h4>
+        <p>+52 812 941 8986</p>
+      </div>
+    </div>
+    <div class="contact__item">
+      <div class="contact__icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <div>
+        <h4>Correo</h4>
+        <p>hola@decorarte.mx</p>
+      </div>
+    </div>
+    <div class="contact__item">
+      <div class="contact__icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div>
+        <h4>Ubicación</h4>
+        <p>Monterrey, Nuevo León, México</p>
+      </div>
+    </div>
+    <div class="contact__item">
+      <div class="contact__icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div>
+        <h4>Horario</h4>
+        <p>Lun – Sáb: 9:00 am – 7:00 pm</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <a href="#top" class="header__logo">
+      <svg width="32" height="32" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="10" width="180" height="180" rx="4" stroke="white" stroke-width="18" fill="none"/>
+        <path d="M60 160 L100 50 L140 160" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M75 125 Q100 110 125 125" stroke="white" stroke-width="10" stroke-linecap="round" fill="none"/>
+        <path d="M55 145 Q80 90 100 120 Q120 150 145 80 Q160 40 130 60 Q110 75 130 100" stroke="white" stroke-width="10" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span style="color:white; font-family:'Cormorant Garamond',serif; font-size:1.2rem;">Decor<strong>Arte</strong></span>
+    </a>
+    <p class="footer__copy">© 2025 DecorArte. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- WhatsApp float -->
+<a class="wa-float" href="https://wa.me/528129418986?text=Hola%2C%20me%20interesa%20conocer%20los%20productos%20de%20DecorArte" target="_blank" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.851L.057 23.885a.5.5 0 00.608.628l6.169-1.453A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.807 9.807 0 01-5.034-1.388l-.36-.214-3.733.879.936-3.62-.235-.372A9.808 9.808 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
