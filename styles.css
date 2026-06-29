@@ -290,19 +290,19 @@ body {
 
 .carousel-wrapper {
   display: flex; align-items: center; gap: 12px;
-  max-width: 1200px; margin: 0 auto; padding: 0 16px;
+  width: 100%; padding: 0 16px;
   position: relative;
 }
 
 .carousel-track-wrap { overflow: hidden; flex: 1; }
 
 .carousel-track {
-  display: flex; gap: 24px;
+  display: flex; gap: 16px;
   transition: transform .4s ease;
 }
 
 .carousel-card {
-  min-width: 200px; max-width: 200px; flex-shrink: 0;
+  min-width: 0; flex: 1; flex-shrink: 0;
   background: #fff;
   border: 1px solid var(--border);
   border-radius: var(--radius);
