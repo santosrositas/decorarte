@@ -76,9 +76,9 @@ body {
 /* ===== HERO ===== */
 .hero {
   min-height: 60vh;
-  display: flex; align-items: center;
+  display: flex; align-items: flex-start;
   position: relative; overflow: hidden;
-  padding: 48px 24px;
+  padding: 36px 24px 48px;
 }
 .hero__bg {
   position: absolute; inset: 0;
@@ -95,6 +95,7 @@ body {
   max-width: 1200px; width: 100%; margin: 0 auto;
   position: relative; z-index: 2;
   text-align: left;
+  padding-left: 60px;
 }
 .hero__title {
   font-family: 'Cormorant Garamond', serif;
