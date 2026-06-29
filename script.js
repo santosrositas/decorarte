@@ -8,7 +8,7 @@
 
   const cards = track.querySelectorAll('.carousel-card');
   let current = 0;
-  const visible = () => window.innerWidth < 640 ? 1 : window.innerWidth < 960 ? 2 : 3;
+  const visible = () => window.innerWidth < 640 ? 1 : window.innerWidth < 960 ? 2 : 4;
 
   // Create dots
   cards.forEach((_, i) => {
@@ -21,7 +21,7 @@
   function goTo(idx) {
     const max = Math.max(0, cards.length - visible());
     current = Math.min(Math.max(idx, 0), max);
-    const w = cards[0].offsetWidth + 24;
+    const w = cards[0].offsetWidth + 16;
     track.style.transform = `translateX(-${current * w}px)`;
     dotsWrap.querySelectorAll('.carousel-dot').forEach((d, i) => d.classList.toggle('active', i === current));
     prevBtn.disabled = current === 0;
