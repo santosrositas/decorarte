@@ -10,7 +10,6 @@
   let current = 0;
   const visible = () => window.innerWidth < 640 ? 1 : window.innerWidth < 960 ? 2 : 4;
 
-  // Create dots
   cards.forEach((_, i) => {
     const d = document.createElement('button');
     d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
@@ -19,13 +18,20 @@
   });
 
   function goTo(idx) {
-    const max = Math.max(0, cards.length - visible());
+    const v = visible();
+    const max = Math.max(0, cards.length - v);
     current = Math.min(Math.max(idx, 0), max);
-    const w = cards[0].offsetWidth + 16;
+    const gap = 16;
+    const w = cards[0].offsetWidth + gap;
     track.style.transform = `translateX(-${current * w}px)`;
     dotsWrap.querySelectorAll('.carousel-dot').forEach((d, i) => d.classList.toggle('active', i === current));
     prevBtn.disabled = current === 0;
     nextBtn.disabled = current >= max;
+    // Hide arrows on desktop (all cards visible)
+    const hide = v >= cards.length;
+    prevBtn.style.display = hide ? 'none' : '';
+    nextBtn.style.display = hide ? 'none' : '';
+    dotsWrap.style.display = hide ? 'none' : '';
   }
 
   prevBtn.addEventListener('click', () => goTo(current - 1));
