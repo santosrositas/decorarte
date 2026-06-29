@@ -83,7 +83,7 @@ body {
 .hero__bg {
   position: absolute; inset: 0;
   background-size: cover;
-  background-position: top center;
+  background-position: 50% 55%;
   z-index: 0;
 }
 .hero__overlay {
