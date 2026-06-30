@@ -173,7 +173,7 @@ body {
 }
 
 /* ===== SECTION HEADER ===== */
-.section-header { text-align: center; padding: 80px 24px 48px; max-width: 640px; margin: 0 auto; }
+.section-header { text-align: center; padding: 32px 24px 48px; max-width: 640px; margin: 0 auto; }
 .section-tag {
   display: inline-block;
   font-size: .75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
@@ -435,7 +435,7 @@ body {
 
   /* Products */
   .products__grid { grid-template-columns: 1fr; gap: 12px; }
-  .section-header { padding: 48px 16px 32px; }
+  .section-header { padding: 24px 16px 32px; }
 
   /* Carousel */
   .carousel-card { flex: 0 0 100%; }
