@@ -40,6 +40,25 @@
   goTo(0);
 })();
 
+// Lightbox
+(function() {
+  const lb = document.getElementById('lightbox');
+  const img = document.getElementById('lightboxImg');
+  const close = document.getElementById('lightboxClose');
+  const backdrop = document.getElementById('lightboxBackdrop');
+
+  function open(src, alt) { img.src = src; img.alt = alt; lb.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeLb() { lb.classList.remove('open'); document.body.style.overflow = ''; }
+
+  document.querySelectorAll('.card__img-wrap img, .carousel-card__img img').forEach(el => {
+    el.addEventListener('click', () => open(el.src, el.alt));
+  });
+
+  close.addEventListener('click', closeLb);
+  backdrop.addEventListener('click', closeLb);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+})();
+
 // Mobile nav toggle
 const toggle = document.getElementById('navToggle');
 const nav = document.getElementById('nav');
