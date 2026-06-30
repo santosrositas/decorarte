@@ -38,13 +38,31 @@
   nextBtn.addEventListener('click', () => goTo(current + 1));
   window.addEventListener('resize', () => goTo(current));
 
-  // Touch/swipe support
-  let touchStartX = 0;
-  track.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
-  track.addEventListener('touchend', e => {
-    const diff = touchStartX - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+  // Touch/swipe — live drag + snap
+  let touchStartX = 0, touchDelta = 0, isDragging = false;
+  const baseTranslate = () => -(current * (cards[0].offsetWidth + 16));
+
+  track.addEventListener('touchstart', e => {
+    touchStartX = e.touches[0].clientX;
+    touchDelta = 0;
+    isDragging = true;
+    track.style.transition = 'none';
   }, { passive: true });
+
+  track.addEventListener('touchmove', e => {
+    if (!isDragging) return;
+    touchDelta = e.touches[0].clientX - touchStartX;
+    track.style.transform = `translateX(${baseTranslate() + touchDelta}px)`;
+  }, { passive: true });
+
+  track.addEventListener('touchend', () => {
+    if (!isDragging) return;
+    isDragging = false;
+    track.style.transition = 'transform .35s ease';
+    if (touchDelta < -60) goTo(current + 1);
+    else if (touchDelta > 60) goTo(current - 1);
+    else goTo(current);
+  });
 
   goTo(0);
 })();
