@@ -40,11 +40,11 @@ body {
   display: flex; align-items: center; gap: 10px;
   text-decoration: none; color: var(--navy);
 }
-.header__brand {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.4rem; letter-spacing: .02em;
+.header__logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
 }
-.header__brand strong { font-weight: 600; }
 
 .nav { display: flex; align-items: center; gap: 8px; }
 .nav__link {
