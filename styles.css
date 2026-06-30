@@ -41,13 +41,13 @@ body {
   text-decoration: none; color: var(--navy);
 }
 .header__logo-img {
-  height: 48px;
+  height: 72px;
   width: auto;
   object-fit: contain;
 }
 
 .footer__logo-img {
-  height: 40px;
+  height: 60px;
   width: auto;
   object-fit: contain;
   filter: brightness(0) invert(1);
