@@ -356,7 +356,7 @@ body {
 .carousel-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
 
 .carousel-card__img {
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 1 / 1;
   background: var(--cream);
   overflow: hidden;
 }
