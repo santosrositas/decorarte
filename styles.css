@@ -124,7 +124,7 @@ body {
 }
 .btn--primary:hover { box-shadow: 0 8px 28px rgba(27,43,75,.35); }
 .btn--wa {
-  background: #2563EB; color: #fff;
+  background: var(--navy); color: #fff;
   width: 100%;
   justify-content: center;
   font-size: .88rem;
@@ -427,7 +427,7 @@ body {
   }
 
   /* Products */
-  .products__grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .products__grid { grid-template-columns: 1fr; gap: 12px; }
   .section-header { padding: 48px 16px 32px; }
 
   /* Carousel */
