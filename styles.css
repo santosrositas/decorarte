@@ -46,6 +46,13 @@ body {
   object-fit: contain;
 }
 
+.footer__logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
 .nav { display: flex; align-items: center; gap: 8px; }
 .nav__link {
   padding: 8px 16px;
